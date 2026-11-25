@@ -123,7 +123,7 @@ await writeFile(
 <h2>Jak wygląda audyt</h2>
 <ol>
 <li><strong>Test automatyczny</strong> – axe-core na każdej stronie w dwóch szerokościach ekranu, dopasowanie do ekranu 320 px, powiększenie 200%, odstępy w tekście, przejście klawiaturą (link pomijający, widoczny fokus, pułapki), Lighthouse.</li>
-<li><strong>Ocena ręczna</strong> – 50 kryteriów według <a href="checklista.html">listy kontrolnej</a>: sama klawiatura, czytniki ekranu NVDA i VoiceOver, kontrast elementów nietekstowych, formularze i komunikaty o błędach, treść dokumentów.</li>
+<li><strong>Ocena ręczna</strong> – wszystkie 50 kryteriów sukcesu WCAG 2.1 na poziomach A i AA według <a href="checklista.html">listy kontrolnej</a> i metodyki WCAG-EM (test automatyczny wspiera tylko część z nich): sama klawiatura, czytniki ekranu NVDA i VoiceOver, kontrast elementów nietekstowych, formularze i komunikaty o błędach, treść dokumentów.</li>
 <li><strong>Raport i zalecenia</strong> – lista niezgodności z priorytetem, wskazaniem miejsca i sposobem naprawy; projekt deklaracji dostępności.</li>
 <li><strong>Test po poprawkach</strong> – ponowny audyt zmienionych stron; test automatyczny może działać przy każdej zmianie w serwisie (GitHub Actions).</li>
 </ol>
