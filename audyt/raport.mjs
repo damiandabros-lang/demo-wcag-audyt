@@ -116,7 +116,8 @@ ${tabela(['Serwis', 'Niezgodne', 'Ostrzeżenia', 'Bez wykrytych problemów', 'Do
 ${serwisy.map((s, i) => `
 <section aria-labelledby="${id(s, i)}">
 <h2 id="${id(s, i)}">${esc(s.nazwa)}</h2>
-<p class="meta">${esc(s.technologia)} · <a href="${esc(s.url)}">${esc(s.url)}</a></p>
+<p class="meta">${esc(s.technologia)} · Adres badanego środowiska: <code>${esc(s.url)}</code></p>
+${/^https?:\/\/(127\.0\.0\.1|localhost|\[::1\])(?=[:/]|$)/i.test(s.url) ? '<p class="uwaga">Wyniki pochodzą ze środowiska lokalnego, nie z publicznej strony demo. Adres localhost wskazywał komputer wykonujący badanie. Wyniki Lighthouse nie opisują wydajności obecnego hostingu.</p>' : ""}
 ${s.lighthouse && !s.lighthouse.blad ? `<p>Lighthouse, strona główna, profil telefonu: wydajność ${s.lighthouse.performance}, dostępność ${s.lighthouse.accessibility}, dobre praktyki ${s.lighthouse['best-practices']}, SEO ${s.lighthouse.seo}${s.lighthouse.seo < 90 ? ' (niższe SEO wynika z celowego zakazu indeksowania dema)' : ''}.</p>` : ''}
 <h3>Kryteria sukcesu WCAG 2.1 AA</h3>
 ${tabela(['Kryterium', 'Poziom', 'Wynik', 'Szczegóły'], s.kryteria.map((k) => `<tr><th scope="row">${k.id} ${esc(k.nazwa)}</th><td>${k.poziom}</td><td>${st(k.status)}</td><td>${k.problemy.length ? `<ul>${k.problemy.slice(0, 6).map((p) => `<li><code>${esc(p.strona)}</code>: ${esc(p.opis)}</li>`).join('')}</ul>` : esc(k.uwagi)}</td></tr>`), `Wyniki dla kryteriów – ${s.nazwa}`)}

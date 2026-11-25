@@ -11,6 +11,19 @@ import { KRYTERIA, kryteriaReguly, kryteriumZTagu } from '../audyt/wcag.mjs';
 const run = promisify(execFile);
 const root = path.resolve(import.meta.dirname, '..');
 
+test('raport lokalny nie kieruje czytelnika do localhost ani nie udaje pomiaru hostingu', async () => {
+  const tmp = await mkdtemp(path.join(tmpdir(), 'raport-lokalny-'));
+  const source = await readFile(path.join(root, 'raporty/2026-11-25-dema-po-poprawkach/wyniki.json'), 'utf8');
+  await writeFile(path.join(tmp, 'wyniki.json'), source);
+  await run(process.execPath, [path.join(root, 'audyt/raport.mjs'), tmp]);
+  const html = await readFile(path.join(tmp, 'index.html'), 'utf8');
+  assert.doesNotMatch(html, /href="http:\/\/127\.0\.0\.1/);
+  assert.match(html, /Wyniki pochodzą ze środowiska lokalnego/);
+  assert.match(html, /nie opisują wydajności obecnego hostingu/);
+  assert.match(html, /noindex, nofollow/);
+  assert.equal(await readFile(path.join(tmp, 'wyniki.json'), 'utf8'), source);
+});
+
 test('lista zawiera 50 kryteriów WCAG 2.1 A i AA', () => {
   assert.equal(KRYTERIA.length, 50);
   assert.equal(new Set(KRYTERIA.map((k) => k.id)).size, 50);

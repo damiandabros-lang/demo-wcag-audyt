@@ -128,7 +128,7 @@ await writeFile(
 <li><strong>Test po poprawkach</strong> – ponowny audyt zmienionych stron; test automatyczny może działać przy każdej zmianie w serwisie (GitHub Actions).</li>
 </ol>
 <h2>Przykładowe raporty</h2>
-${katalogi.length ? `<ul>${katalogi.map((k) => `<li><a href="${esc(k.d)}/">${esc(k.nazwa)}</a> – ${esc(new Date(k.data).toLocaleDateString('pl-PL', { timeZone: 'Europe/Warsaw', dateStyle: 'long' }))}, ${k.serwisy} serwisy, ${k.strony} stron</li>`).join('')}</ul>` : '<p>Brak raportów.</p>'}`,
+${katalogi.length ? `<ul>${katalogi.map((k) => `<li><a href="${esc(k.d)}/">${esc(k.nazwa)}</a> – ${esc(new Date(k.data).toLocaleDateString('pl-PL', { timeZone: 'Europe/Warsaw', dateStyle: 'long' }))}, liczba serwisów: ${k.serwisy}, liczba stron: ${k.strony}</li>`).join('')}</ul>` : '<p>Brak raportów.</p>'}`,
   ),
 );
 
