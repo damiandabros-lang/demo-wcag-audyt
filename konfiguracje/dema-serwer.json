@@ -1,0 +1,29 @@
+{
+  "nazwa": "Audyt dostępności dem portfolio Isvero Studio (wersje na serwerze)",
+  "serwisy": [
+    {
+      "nazwa": "Serwis gminy, BIP, szkoły i biblioteki",
+      "technologia": "WordPress 7 + MariaDB",
+      "url": "https://demo-samorzad.148.113.245.121.sslip.io",
+      "strony": ["/", "/gmina/odpady/", "/bip/", "/bip/zalatw-sprawe/", "/bip/rejestr-zmian/", "/szkola/plan-lekcji/", "/biblioteka/katalog/?k=test", "/aktualnosci/", "/kontakt/", "/deklaracja-dostepnosci/"]
+    },
+    {
+      "nazwa": "Elektroniczny rejestr pism (kancelaria)",
+      "technologia": "ASP.NET Core 8 + MS SQL Server",
+      "url": "https://demo-rejestr.148.113.245.121.sslip.io",
+      "strony": ["/", "/Konto/Logowanie", "/Dostepnosc", "/strona-ktorej-nie-ma"]
+    },
+    {
+      "nazwa": "Portal e-usług urzędu",
+      "technologia": "Next.js 15 + TypeScript",
+      "url": "https://demo-eurzad.148.113.245.121.sslip.io",
+      "strony": ["/", "/uslugi", "/uslugi/deklaracja-odpady", "/wniosek", "/status", "/dostepnosc"]
+    },
+    {
+      "nazwa": "Sklep internetowy z płatnościami",
+      "technologia": "Next.js 15 + Stripe (tryb testowy)",
+      "url": "https://demo-sklep.148.113.245.121.sslip.io",
+      "strony": ["/", "/produkt/kubek-ceramiczny", "/koszyk", "/regulamin"]
+    }
+  ]
+}

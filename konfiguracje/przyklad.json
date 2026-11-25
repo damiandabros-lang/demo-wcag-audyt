@@ -1,0 +1,12 @@
+{
+  "nazwa": "Audyt dostępności – przykładowa konfiguracja",
+  "limitTab": 40,
+  "serwisy": [
+    {
+      "nazwa": "Serwis przykładowy",
+      "technologia": "dowolna",
+      "url": "https://example.org",
+      "strony": ["/", "/kontakt", "/deklaracja-dostepnosci"]
+    }
+  ]
+}

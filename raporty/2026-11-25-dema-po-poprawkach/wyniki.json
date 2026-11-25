@@ -1,0 +1,816 @@
+{
+  "nazwa": "Audyt dostępności dem portfolio Isvero Studio – po poprawkach",
+  "data": "2026-11-25T15:11:23.535Z",
+  "narzedzia": {
+    "axe-core": "4.10.2",
+    "playwright": "1.63.0",
+    "przegladarka": "158.0.8127.36"
+  },
+  "serwisy": [
+    {
+      "nazwa": "Serwis gminy, BIP, szkoły i biblioteki",
+      "url": "http://127.0.0.1:8080",
+      "technologia": "WordPress 7 + MariaDB",
+      "strony": [
+        {
+          "sciezka": "/",
+          "url": "http://127.0.0.1:8080/",
+          "status": 200,
+          "tytul": "Gmina Przykładowo – DEMO – Projekt pokazowy Isvero Studio. Nie jest to strona żadnej instytucji publicznej.",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 39,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/gmina/odpady/",
+          "url": "http://127.0.0.1:8080/gmina/odpady/",
+          "status": 200,
+          "tytul": "Odpady komunalne – Gmina Przykładowo – DEMO",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 39,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": [
+              {
+                "id": "color-contrast",
+                "opis": "Elementy muszą mieć wystarczający kontrast kolorów.",
+                "wplyw": "serious",
+                "kryteria": [
+                  "1.4.3"
+                ],
+                "pomoc": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+                "liczba": 7
+              }
+            ]
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/bip/",
+          "url": "http://127.0.0.1:8080/bip/",
+          "status": 200,
+          "tytul": "BIP – Gmina Przykładowo – DEMO",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 39,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/bip/zalatw-sprawe/",
+          "url": "http://127.0.0.1:8080/bip/zalatw-sprawe/",
+          "status": 200,
+          "tytul": "Załatw sprawę – Gmina Przykładowo – DEMO",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 39,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/bip/rejestr-zmian/",
+          "url": "http://127.0.0.1:8080/bip/rejestr-zmian/",
+          "status": 200,
+          "tytul": "Rejestr zmian – Gmina Przykładowo – DEMO",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 40,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": [
+              {
+                "id": "color-contrast",
+                "opis": "Elementy muszą mieć wystarczający kontrast kolorów.",
+                "wplyw": "serious",
+                "kryteria": [
+                  "1.4.3"
+                ],
+                "pomoc": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+                "liczba": 18
+              }
+            ]
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/szkola/plan-lekcji/",
+          "url": "http://127.0.0.1:8080/szkola/plan-lekcji/",
+          "status": 200,
+          "tytul": "Plan lekcji – Gmina Przykładowo – DEMO",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 39,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": [
+              {
+                "id": "color-contrast",
+                "opis": "Elementy muszą mieć wystarczający kontrast kolorów.",
+                "wplyw": "serious",
+                "kryteria": [
+                  "1.4.3"
+                ],
+                "pomoc": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+                "liczba": 13
+              }
+            ]
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/biblioteka/katalog/?k=test",
+          "url": "http://127.0.0.1:8080/biblioteka/katalog/?k=test",
+          "status": 200,
+          "tytul": "Katalog online – Gmina Przykładowo – DEMO",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 39,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/aktualnosci/",
+          "url": "http://127.0.0.1:8080/aktualnosci/",
+          "status": 200,
+          "tytul": "Aktualności – Gmina Przykładowo – DEMO",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 40,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/kontakt/",
+          "url": "http://127.0.0.1:8080/kontakt/",
+          "status": 200,
+          "tytul": "Kontakt – Gmina Przykładowo – DEMO",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": [
+              {
+                "id": "color-contrast",
+                "opis": "Elementy muszą mieć wystarczający kontrast kolorów.",
+                "wplyw": "serious",
+                "kryteria": [
+                  "1.4.3"
+                ],
+                "pomoc": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+                "liczba": 1
+              }
+            ]
+          },
+          "klawiatura": {
+            "przejsc": 39,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": [
+              {
+                "id": "color-contrast",
+                "opis": "Elementy muszą mieć wystarczający kontrast kolorów.",
+                "wplyw": "serious",
+                "kryteria": [
+                  "1.4.3"
+                ],
+                "pomoc": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+                "liczba": 1
+              }
+            ]
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/deklaracja-dostepnosci/",
+          "url": "http://127.0.0.1:8080/deklaracja-dostepnosci/",
+          "status": 200,
+          "tytul": "Deklaracja dostępności – Gmina Przykładowo – DEMO",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 39,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        }
+      ],
+      "multimedia": 0,
+      "lighthouse": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 66
+      }
+    },
+    {
+      "nazwa": "Elektroniczny rejestr pism (kancelaria)",
+      "url": "http://127.0.0.1:5080",
+      "technologia": "ASP.NET Core 8 + MS SQL Server",
+      "strony": [
+        {
+          "sciezka": "/",
+          "url": "http://127.0.0.1:5080/",
+          "status": 200,
+          "tytul": "Start – Rejestr pism (DEMO)",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 36,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/Konto/Logowanie",
+          "url": "http://127.0.0.1:5080/Konto/Logowanie",
+          "status": 200,
+          "tytul": "Logowanie – Rejestr pism (DEMO)",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 37,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/Dostepnosc",
+          "url": "http://127.0.0.1:5080/Dostepnosc",
+          "status": 200,
+          "tytul": "Dostępność – Rejestr pism (DEMO)",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 36,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/strona-ktorej-nie-ma",
+          "url": "http://127.0.0.1:5080/strona-ktorej-nie-ma",
+          "status": 404,
+          "tytul": "Nie znaleziono strony – Rejestr pism (DEMO)",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 36,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        }
+      ],
+      "multimedia": 0,
+      "lighthouse": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 63
+      }
+    },
+    {
+      "nazwa": "Portal e-usług urzędu",
+      "url": "http://127.0.0.1:3002",
+      "technologia": "Next.js 15 + TypeScript",
+      "strony": [
+        {
+          "sciezka": "/",
+          "url": "http://127.0.0.1:3002/",
+          "status": 200,
+          "tytul": "e-Urząd Gminy Przykładowo (DEMO)",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 38,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/uslugi",
+          "url": "http://127.0.0.1:3002/uslugi",
+          "status": 200,
+          "tytul": "Katalog e-usług – e-Urząd (DEMO)",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 38,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/uslugi/deklaracja-odpady",
+          "url": "http://127.0.0.1:3002/uslugi/deklaracja-odpady",
+          "status": 200,
+          "tytul": "Deklaracja o wysokości opłaty za odpady – e-Urząd (DEMO)",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 37,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/wniosek",
+          "url": "http://127.0.0.1:3002/wniosek",
+          "status": 200,
+          "tytul": "Złóż wniosek – e-Urząd (DEMO)",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": [
+              {
+                "id": "color-contrast",
+                "opis": "Elementy muszą mieć wystarczający kontrast kolorów.",
+                "wplyw": "serious",
+                "kryteria": [
+                  "1.4.3"
+                ],
+                "pomoc": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+                "liczba": 1
+              }
+            ]
+          },
+          "klawiatura": {
+            "przejsc": 38,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": [
+              {
+                "id": "color-contrast",
+                "opis": "Elementy muszą mieć wystarczający kontrast kolorów.",
+                "wplyw": "serious",
+                "kryteria": [
+                  "1.4.3"
+                ],
+                "pomoc": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+                "liczba": 1
+              }
+            ]
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/status",
+          "url": "http://127.0.0.1:3002/status",
+          "status": 200,
+          "tytul": "Sprawdź status sprawy – e-Urząd (DEMO)",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 37,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/dostepnosc",
+          "url": "http://127.0.0.1:3002/dostepnosc",
+          "status": 200,
+          "tytul": "Deklaracja dostępności – e-Urząd (DEMO)",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 37,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        }
+      ],
+      "multimedia": 0,
+      "lighthouse": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 63
+      }
+    },
+    {
+      "nazwa": "Sklep internetowy z płatnościami",
+      "url": "http://127.0.0.1:3001",
+      "technologia": "Next.js 15 + Stripe (tryb testowy)",
+      "strony": [
+        {
+          "sciezka": "/",
+          "url": "http://127.0.0.1:3001/",
+          "status": 200,
+          "tytul": "Sklep Przykładowo (DEMO)",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 38,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/produkt/kubek-ceramiczny",
+          "url": "http://127.0.0.1:3001/produkt/kubek-ceramiczny",
+          "status": 200,
+          "tytul": "Kubek ceramiczny „Przykładowo” – Sklep Przykładowo (DEMO)",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 36,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/koszyk",
+          "url": "http://127.0.0.1:3001/koszyk",
+          "status": 200,
+          "tytul": "Koszyk – Sklep Przykładowo (DEMO)",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 35,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        },
+        {
+          "sciezka": "/regulamin",
+          "url": "http://127.0.0.1:3001/regulamin",
+          "status": 200,
+          "tytul": "Regulamin (demo) – Sklep Przykładowo (DEMO)",
+          "axeDesktop": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "klawiatura": {
+            "przejsc": 35,
+            "linkPomijajacy": true,
+            "pierwszyElement": "a Przejdź do treści",
+            "bezWidocznegoFokusu": [],
+            "pulapka": false
+          },
+          "axeMobile": {
+            "naruszenia": [],
+            "doSprawdzenia": []
+          },
+          "reflow320": true,
+          "zoom200": true,
+          "odstepy": {
+            "uciete": [],
+            "liczba": 0,
+            "przewijaniePoziome": false
+          }
+        }
+      ],
+      "multimedia": 0,
+      "lighthouse": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 63
+      }
+    }
+  ]
+}

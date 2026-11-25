@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Audyt dostępności WCAG 2.1 AA – metodyka, lista kontrolna i przykładowe raporty (DEMO, 2026).">
+<title>Audyt dostępności WCAG 2.1 AA – audyt WCAG (DEMO)</title>
+<style>:root{--tlo:#fff;--tekst:#1a1a1a;--slaby:#4a4a4a;--akcent:#0b5394;--linia:#c8c8c8;--ok:#1d6b2f;--ok-t:#e6f4ea;--blad:#a01414;--blad-t:#fbe9e9;--ostrz:#7a4b00;--ostrz-t:#fff4dc;--cz:#2f4f6f;--cz-t:#eaf1f8;--r:#3d3d3d;--r-t:#f1f1f1}
+*{box-sizing:border-box}
+html{font-size:100%}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.55;color:var(--tekst);background:var(--tlo)}
+a{color:var(--akcent)}
+a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid #1a1a1a;outline-offset:2px;box-shadow:0 0 0 5px #ffd400}
+.skip{position:absolute;left:-9999px;top:0;background:#1a1a1a;color:#fff;padding:.6rem 1rem;z-index:10}
+.skip:focus{left:.5rem;top:.5rem}
+.demo{background:#1a1a1a;color:#fff;padding:.5rem 1rem;font-size:.95rem}
+.demo strong{color:#ffd400}
+header.top,main,footer{max-width:72rem;margin:0 auto;padding:0 1rem}
+header.top{padding-top:1.5rem}
+h1{font-size:clamp(1.6rem,4vw,2.2rem);line-height:1.2;margin:.5rem 0}
+h2{margin-top:2.5rem;font-size:1.5rem}
+h3{margin-top:2rem;font-size:1.2rem}
+.meta{color:var(--slaby)}
+.karty{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;padding:0;list-style:none}
+.karta{border:1px solid var(--linia);border-radius:.5rem;padding:1rem}
+.karta h3{margin:0 0 .25rem;font-size:1.1rem}
+.karta p{margin:.25rem 0}
+.table-wrap{overflow-x:auto;position:relative;margin:1rem 0}
+table{border-collapse:collapse;width:100%;min-width:36rem}
+th,td{border:1px solid var(--linia);padding:.45rem .6rem;text-align:left;vertical-align:top}
+thead th{background:#f3f3f3}
+.st{display:inline-block;padding:.1rem .5rem;border-radius:.3rem;font-weight:600;font-size:.9rem;border:1px solid currentColor}
+.st-ok{color:var(--ok);background:var(--ok-t)}
+.st-blad{color:var(--blad);background:var(--blad-t)}
+.st-ostrz{color:var(--ostrz);background:var(--ostrz-t)}
+.st-cz{color:var(--cz);background:var(--cz-t)}
+.st-r,.st-nd{color:var(--r);background:var(--r-t)}
+details{border:1px solid var(--linia);border-radius:.4rem;padding:.5rem .8rem;margin:.5rem 0}
+summary{cursor:pointer;font-weight:600}
+code{font-size:.9em;background:#f3f3f3;padding:0 .2em;border-radius:.2em;word-break:break-word}
+.uwaga{border-left:4px solid var(--akcent);background:#eef4fa;padding:.75rem 1rem}
+footer{margin-top:3rem;padding-bottom:2rem;color:var(--slaby);border-top:1px solid var(--linia)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}
+}
+@media print{.demo,.skip{display:none}
+details{border:0}
+details>*{display:block}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#tresc">Przejdź do treści</a>
+<div class="demo" role="note"><strong>DEMO</strong> – narzędzie i przykładowe raporty Isvero Studio z 2026 r., wykonane na własnych serwisach demonstracyjnych. Nie są to audyty wykonane dla klientów.</div>
+<header class="top"><nav aria-label="Główna"><a href="./">Raporty</a> · <a href="checklista.html">Lista kontrolna</a></nav></header>
+<main id="tresc" tabindex="-1">
+<h1>Audyt dostępności WCAG 2.1 AA</h1>
+<p>Narzędzie do automatycznej części audytu dostępności stron i aplikacji internetowych oraz lista kontrolna do oceny ręcznej. Raporty są generowane w języku polskim i odwołują się do kryteriów sukcesu WCAG 2.1 wymaganych od podmiotów publicznych.</p>
+<h2>Jak wygląda audyt</h2>
+<ol>
+<li><strong>Test automatyczny</strong> – axe-core na każdej stronie w dwóch szerokościach ekranu, dopasowanie do ekranu 320 px, powiększenie 200%, odstępy w tekście, przejście klawiaturą (link pomijający, widoczny fokus, pułapki), Lighthouse.</li>
+<li><strong>Ocena ręczna</strong> – 50 kryteriów według <a href="checklista.html">listy kontrolnej</a>: sama klawiatura, czytniki ekranu NVDA i VoiceOver, kontrast elementów nietekstowych, formularze i komunikaty o błędach, treść dokumentów.</li>
+<li><strong>Raport i zalecenia</strong> – lista niezgodności z priorytetem, wskazaniem miejsca i sposobem naprawy; projekt deklaracji dostępności.</li>
+<li><strong>Test po poprawkach</strong> – ponowny audyt zmienionych stron; test automatyczny może działać przy każdej zmianie w serwisie (GitHub Actions).</li>
+</ol>
+<h2>Przykładowe raporty</h2>
+<ul><li><a href="2026-11-25-dema-przed-poprawkami/">Audyt dostępności dem portfolio Isvero Studio – przed poprawkami</a> – 25 listopada 2026, 4 serwisy, 24 stron</li><li><a href="2026-11-25-dema-po-poprawkach/">Audyt dostępności dem portfolio Isvero Studio – po poprawkach</a> – 25 listopada 2026, 4 serwisy, 24 stron</li></ul>
+</main>
+<footer><p>Isvero Studio · <code>demo-wcag-audyt</code> (2026) · licencja MIT</p></footer>
+</body>
+</html>

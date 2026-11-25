@@ -1,0 +1,17 @@
+# Isvero Studio – DEMO: strona z raportami audytu WCAG (nginx, statyczna).
+# Osobna aplikacja Coolify. Domenę przypisz usłudze "web" (port 80).
+services:
+  web:
+    build: .
+    restart: unless-stopped
+    expose:
+      - "80"
+    read_only: true
+    tmpfs:
+      - /var/cache/nginx
+      - /var/run
+      - /tmp
+    deploy:
+      resources:
+        limits: { memory: 64M, cpus: "0.25" }
+    logging: { driver: json-file, options: { max-size: "10m", max-file: "3" } }

@@ -1,0 +1,27 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Testy narzędzia (strona z błędami i strona poprawna)
+        run: npm test
+      - name: Raporty i lista kontrolna generują się bez błędów
+        run: |
+          for d in raporty/*/; do node audyt/raport.mjs "$d"; done
+          node audyt/checklista.mjs
+      - name: Obraz strony z raportami
+        run: docker build -t demo-wcag-audyt .

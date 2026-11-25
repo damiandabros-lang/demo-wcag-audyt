@@ -1,0 +1,42 @@
+# Cykliczny audyt automatyczny wdrożonych dem (co tydzień) lub na żądanie dla dowolnej konfiguracji.
+# Wynik (wyniki.json, index.html, podsumowanie.md) trafia do artefaktu przebiegu – nic nie jest commitowane.
+name: audyt-wcag
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+    inputs:
+      konfiguracja:
+        description: 'Plik konfiguracji (lista serwisów i stron)'
+        default: 'konfiguracje/dema-serwer.json'
+        required: true
+permissions:
+  contents: read
+jobs:
+  audyt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Audyt
+        env:
+          KONFIG: ${{ inputs.konfiguracja || 'konfiguracje/dema-serwer.json' }}
+        run: |
+          case "$KONFIG" in konfiguracje/*.json) ;; *) echo "::error::Konfiguracja musi leżeć w katalogu konfiguracje/"; exit 1;; esac
+          OUT="raporty/$(date -u +%Y-%m-%d)-ci"
+          node audyt/audyt.mjs "$KONFIG" "$OUT" --lighthouse
+          node audyt/raport.mjs "$OUT"
+          cat "$OUT/podsumowanie.md" >> "$GITHUB_STEP_SUMMARY"
+          echo "OUT=$OUT" >> "$GITHUB_ENV"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: raport-wcag
+          path: ${{ env.OUT }}
+          if-no-files-found: ignore

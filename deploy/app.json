@@ -1,0 +1,10 @@
+{
+  "name": "demo-wcag-audyt",
+  "subdomain": "demo-audyt",
+  "web_service": "web",
+  "port": 80,
+  "compose": "/docker-compose.yml",
+  "check_path": "/",
+  "env": {},
+  "generate_secrets": []
+}

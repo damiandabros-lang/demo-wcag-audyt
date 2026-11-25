@@ -1,0 +1,25 @@
+{
+  "name": "demo-wcag-audyt",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DEMO 2026 – narzędzie i metodyka audytu dostępności WCAG 2.1 AA (axe-core + testy klawiatury, reflow, odstępy w tekście, Lighthouse).",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "audyt": "node audyt/audyt.mjs",
+    "raport": "node audyt/raport.mjs",
+    "checklista": "node audyt/checklista.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "axe-core": "4.10.2",
+    "playwright": "1.63.0"
+  },
+  "optionalDependencies": {
+    "lighthouse": "13.6.0",
+    "chrome-launcher": "1.2.3"
+  }
+}
