@@ -128,6 +128,7 @@ await writeFile(
 <li><strong>Test po poprawkach</strong> – ponowny audyt zmienionych stron; test automatyczny może działać przy każdej zmianie w serwisie (GitHub Actions).</li>
 </ol>
 <h2>Przykładowe raporty</h2>
+<p class="uwaga">Raporty „przed poprawkami” i „po poprawkach” z 25 listopada 2026 obejmują lokalne wersje czterech aplikacji: samorządu (WordPress), rejestru pism, e-urzędu i sklepu. Biblioteka Drupal oraz ta strona z raportami nie należały do tamtej próby. To zapis konkretnego badania, a nie aktualna ocena wszystkich publicznych wdrożeń.</p>
 ${katalogi.length ? `<ul>${katalogi.map((k) => `<li><a href="${esc(k.d)}/">${esc(k.nazwa)}</a> – ${esc(new Date(k.data).toLocaleDateString('pl-PL', { timeZone: 'Europe/Warsaw', dateStyle: 'long' }))}, liczba serwisów: ${k.serwisy}, liczba stron: ${k.strony}</li>`).join('')}</ul>` : '<p>Brak raportów.</p>'}`,
   ),
 );
