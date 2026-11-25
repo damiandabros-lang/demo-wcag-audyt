@@ -2,6 +2,8 @@
 
 > **DEMO / portfolio (2026).** Narzędzie i przykładowe raporty przygotowane przez Isvero Studio na **własnych serwisach demonstracyjnych** z fikcyjnymi danymi. Nie są to audyty wykonane dla klientów ani referencje.
 
+**Demo na żywo:** https://demo-audyt.isverostudio.com (noindex)
+
 Repozytorium pokazuje, jak prowadzę audyt dostępności stron i aplikacji podmiotów publicznych zgodnie z WCAG 2.1 AA (ustawa z 4 kwietnia 2019 r. o dostępności cyfrowej, norma EN 301 549):
 
 1. **Część automatyczna** (`audyt/audyt.mjs`) – powtarzalny test każdej strony z listy, uruchamiany lokalnie albo w GitHub Actions.
